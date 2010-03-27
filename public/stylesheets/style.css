@@ -1,0 +1,76 @@
+body {
+  font-size              : 200%;
+  color                  : #999;
+  width                  : 800px;
+  margin                 : 0 auto;
+  background             : #000;
+  font-family            : Helvetica, "Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+}
+
+#header > h1 {
+  font-size              : 150%;
+  font-weight            : bold;
+  font-stretch           : expanded;
+  margin                 : 10px auto;
+}
+
+#header > h1 > a {
+  color                  : #ff0;
+}
+
+button {
+  color                  : #ff0;
+  height                 : 75px;
+  width                  : 800px;
+  margin                 : 5px auto;
+  background             : #000;
+  font-size              : 150%;
+  border                 : none;
+}
+
+label {
+  display                : inline;
+  color                  : #ff0;
+  text-align             : center;
+}
+
+input {
+  display                : block;
+  color                  : #ff0;
+  height                 : 200px;
+  width                  : 700px;
+  border                 : 1px solid #ff0;
+  margin                 : 2px auto;
+  font-size              : 300%;
+  background             : #000;
+  align                  : center;
+}
+
+.buttons a, .buttons button {
+  display                : block;
+  margin                 : 0 auto;
+  background-color       : #ff0;
+
+  font-size              : 200%;
+  line-height            : 130%;
+  text-decoration        : none;
+  font-weight            : bold;
+  color                  : #000;
+  cursor                 : pointer;
+}
+
+.buttons button {
+  margin-top             : 20px;
+  width                  : 500px;
+  height                 : 200px;
+  overflow               : visible;
+  border-radius          : 6px;
+  -moz-border-radius     : 6px;
+  -webkit-border-radiusf : 6px;
+}
+
+.buttons button.small {
+  margin-top             : 20px;
+  width                  : 300px;
+  height                 : 100px;
+}

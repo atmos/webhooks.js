@@ -1,0 +1,6 @@
+.buttons
+  %form{action: post_url}
+    %label Enter the Freenode IRC channel name
+      %input{ type: 'text', name: 'channel', value: channel_name }
+    %input{ type: 'hidden', name: '_method', value: 'PUT' }
+    %button.small{ type: 'submit' } save it

@@ -1,0 +1,20 @@
+!!! 1.0
+%html{xmlns: "http://www.w3.org/1999/xhtml"}
+  %head
+    %title= title
+    %script{ src: '/public/javascripts/jquery.min.js' }
+    %link{ rel: 'stylesheet', href: '/public/stylesheets/style.css' }
+
+  %body
+    #header
+      %h1
+        %a{ href: '/' }  Webhooks, here!
+
+    #main
+      #mid
+        :if message
+          #messages
+            %span= message
+
+        #content
+          = body
