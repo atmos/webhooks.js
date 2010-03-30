@@ -1,15 +1,16 @@
 A Simple Webhook App
 ====================
 
-This is my first [express][express] app. :)
+This is my first [express][express] app. It uses [facebook][facebook] auth.
 
 You Need
 ========
 
 * [kiwi][kiwi]
 * [hashlib][hashlib]
-* install [express][express]
 
+Install Kiwi Dependencies
+=========================
     % kiwi install express
     % kiwi install facebook
 
@@ -29,3 +30,4 @@ Testing
 [kiwi]: http://github.com/visionmedia/kiwi
 [hashlib]: http://github.com/brainfucker/hashlib
 [express]: http://github.com/visionmedia/express
+[facebook]: http://github.com/atmos/node-facebook
