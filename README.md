@@ -11,10 +11,13 @@ You Need
 * install [express][express]
 
     % kiwi install express
+    % kiwi install facebook
 
 Running
 ========
 
+    % export FB_API_KEY="your api key from facebook"
+    % export FB_SECRET_KEY="your secret key from facebook"
     % bin/server
     % open http://localhost:3000
 

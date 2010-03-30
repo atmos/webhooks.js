@@ -2,13 +2,26 @@
 %html{xmlns: "http://www.w3.org/1999/xhtml"}
   %head
     %title= title
-    %script{ src: '/public/javascripts/jquery.min.js' }
-    %link{ rel: 'stylesheet', href: '/public/stylesheets/style.css' }
+    %link{   rel: 'stylesheet', href: '/public/stylesheets/style.css' }
+    %script{ src: '/public/javascripts/jquery.1.4.2.min.js' }
+    %script{ src: '/javascripts/jquery.facebook.js' }
+    %script= "$(document).ready(function () { $.fbInit('" + apiKey + "'); } );"
+
+    %script{ src: '/public/javascripts/app.js' }
+    %script{ src: 'http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php' }
 
   %body
     #header
       %h1
         %a{ href: '/' }  Webhooks, here!
+      #fb-root
+      #my-account
+        .authenticated{ style: 'display: none' }
+          %span Hi There,
+          %span#fb-name
+          %a{ href: "#", id: "fb-logout"} Logout
+        .not_authenticated{ style: 'display: none' }
+          %a#fb-connect{ href: '#'} Connect with Facebook
 
     #main
       #mid
