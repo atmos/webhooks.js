@@ -2,7 +2,7 @@
 %html{xmlns: "http://www.w3.org/1999/xhtml"}
   %head
     %title= title
-    %link{   rel: 'stylesheet', href: '/public/stylesheets/style.css' }
+    %link{ rel: 'stylesheet', href: '/public/stylesheets/style.css' }
     %script{ src: '/public/javascripts/jquery.1.4.2.min.js' }
     %script{ src: '/javascripts/jquery.facebook.js' }
     %script= "$(document).ready(function () { $.fbInit('" + apiKey + "'); } );"
@@ -14,14 +14,15 @@
     #header
       %h1
         %a{ href: '/' }  Webhooks, here!
-      #fb-root
-      #my-account
-        .authenticated{ style: 'display: none' }
-          %span Hi There,
-          %span#fb-name
-          %a{ href: "#", id: "fb-logout"} Logout
-        .not_authenticated{ style: 'display: none' }
-          %a#fb-connect{ href: '#'} Connect with Facebook
+    #fb-root
+    #my-account
+      .authenticated{ style: 'display: none' }
+        %span#fb-name
+        %span#fb-pic
+          %img{src: user.pic, alt: user.name}
+        %a{ href: "#", id: "fb-logout"} Logout
+      .not_authenticated{ style: 'display: none' }
+        %a#fb-connect{ href: '#'} Connect with Facebook
 
     #main
       #mid

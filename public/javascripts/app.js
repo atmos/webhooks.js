@@ -5,6 +5,8 @@ $(document).ready(function () {
       $('.not_authenticated').hide();
       $('.authenticated').show();
       $('#fb-name').html(fbSession.name);
+      $('#fb-pic > img').attr('src', fbSession.pic);
+      $('#fb-pic > img').attr('alt',fbSession.name);
     });
     return false;
   });

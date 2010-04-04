@@ -6,15 +6,49 @@ body {
   background             : #000;
   font-family            : Helvetica, "Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
 }
-a:visited { color        : #ff0; }
-a:visited { color        : #ff0; }
-a         { color        : #ff0; }
+
+a {
+  color            : #ff0;
+  text-decoration  : none;
+}
+a:hover { text-decoration  : underline; }
+
+#fb-name {
+  display: none;
+}
+
+#fb-pic {
+  display: block;
+}
+
+img {
+  border: 1px solid #ff0;
+}
+
+#header {
+  position: absolute;
+  bottom: 0px;
+}
 
 #header > h1 {
   font-size              : 150%;
   font-weight            : bold;
   font-stretch           : expanded;
   margin                 : 10px auto;
+}
+
+#my-account {
+  position: absolute;
+  right: 10%;
+  top: 0px;
+  padding: 5px 15px 0px 15px;
+  margin: 0;
+  border: 1px solid #ff0;
+  border-top: none;
+}
+
+#main {
+  margin-top: 150px;
 }
 
 button {

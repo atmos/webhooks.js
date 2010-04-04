@@ -1,0 +1,5 @@
+.buttons
+  %form{action: post_url}
+    %input{ type: 'text', name: 'channel', value: channel_name }
+    %input{ type: 'hidden', name: '_method', value: 'PUT' }
+    %button.small{ type: 'submit' } save it

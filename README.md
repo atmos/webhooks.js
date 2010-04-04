@@ -13,6 +13,7 @@ Install Kiwi Dependencies
 =========================
     % kiwi install express
     % kiwi install facebook
+    % kiwi install redis-client
 
 Running
 ========
@@ -30,4 +31,4 @@ Testing
 [kiwi]: http://github.com/visionmedia/kiwi
 [hashlib]: http://github.com/brainfucker/hashlib
 [express]: http://github.com/visionmedia/express
-[facebook]: http://github.com/atmos/node-facebook
+[facebook]: http://github.com/atmos/facebook.js
