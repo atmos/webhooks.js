@@ -67,6 +67,13 @@ label {
   text-align             : center;
 }
 
+pre {
+  color: #000;
+  font-size: 40%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
 input {
   display                : block;
   color                  : #ff0;
