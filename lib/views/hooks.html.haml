@@ -1,5 +1,6 @@
+%h2 Your Hooks
 .hooks
   %ul
-    :each hook in hooks
+    - each hook in hook_ids
       %li
-        %a{href: "/hooks/" + hook.id}= hook.sha
+        %a{href: "/hooks/" + hook}= hook

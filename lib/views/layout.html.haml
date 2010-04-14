@@ -16,7 +16,8 @@
       .authenticated{ style: 'display: none' }
         %span#fb-name
         %span#fb-pic
-          %img{src: user.pic, alt: user.name}
+          %a{href: '/hooks'}
+            %img{src: user.pic, alt: user.name}
         %a{ href: "#", id: "fb-logout"} Logout
       .not_authenticated{ style: 'display: none' }
         %a#fb-connect{ href: '#'} Connect with Facebook

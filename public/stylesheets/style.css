@@ -37,6 +37,12 @@ img {
   margin                 : 10px auto;
 }
 
+#messages {
+  position: absolute;
+  text-align: center;
+  bottom: 120px;
+}
+
 #my-account {
   position: absolute;
   right: 10%;
@@ -51,15 +57,6 @@ img {
   margin-top: 150px;
 }
 
-button {
-  color                  : #ff0;
-  height                 : 75px;
-  width                  : 800px;
-  margin                 : 5px auto;
-  background             : #000;
-  font-size              : 150%;
-  border                 : none;
-}
 
 label {
   display                : inline;
@@ -100,6 +97,7 @@ input {
 }
 
 .buttons button {
+  margin                 : 5px auto;
   margin-top             : 20px;
   width                  : 500px;
   height                 : 200px;
