@@ -1,6 +1,7 @@
 %h2 Your Hooks
-.hooks
-  %ul
-    - each hook in hook_ids
-      %li
-        %a{href: "/hooks/" + hook}= hook
+- if(hook_ids.length > 0)
+  .hooks
+    %ul
+      - each hook in hook_ids
+        %li
+          %a{href: "/hooks/" + hook}= hook

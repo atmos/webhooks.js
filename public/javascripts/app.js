@@ -29,4 +29,8 @@ $(document).ready(function () {
     // Not authenticated
     $('.not_authenticated').show();
   });
+
+  $('#messages').fadeOut(5000, function() {
+     $('#message');
+  });
 });
