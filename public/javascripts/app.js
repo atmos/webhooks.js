@@ -16,6 +16,7 @@ $(document).ready(function () {
     $.fbLogout(function () {
       $('.authenticated').hide();
       $('.not_authenticated').show();
+      location = '/'
     });
     return false;
   });

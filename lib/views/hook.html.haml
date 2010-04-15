@@ -1,8 +1,12 @@
 %pre= "curl -X POST http://localhost:3000/hooks/" +  sha1 + " -d \"message=hey,%20yo\""
 
 .buttons
-  %form{action: post_url}
+  %form.left{action: post_url}
     %input{ type: 'text', name: 'channel', value: channel_name }
     %input{ type: 'hidden', name: '_method', value: 'PUT' }
     %button.small{ type: 'submit' } save it
+  %form{action: post_url}
+    %input{ type: 'hidden', name: 'id', value: sha1 }
+    %input{ type: 'hidden', name: '_method', value: 'DELETE' }
+    %button.small{ type: 'submit' } nuke it
 
