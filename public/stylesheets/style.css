@@ -4,7 +4,7 @@ body {
   width                  : 800px;
   margin                 : 0 auto;
   background             : #000;
-  font-family            : Helvetica, "Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+  font-family            : "Helevetica Neue", Helvetica, "Trebuchet MS", "Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
 }
 
 a {
@@ -83,6 +83,10 @@ input {
   align                  : center;
 }
 
+.buttons > form > button {
+  font-family            : Impact, "Helevetica Neue", Helvetica, "Trebuchet MS", "Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+}
+
 .buttons a, .buttons button {
   display                : block;
   margin                 : 0 auto;
@@ -112,4 +116,3 @@ input {
   width                  : 300px;
   height                 : 100px;
 }
-
